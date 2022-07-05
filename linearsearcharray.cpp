@@ -23,6 +23,7 @@ int main() {
     int key;
     cout<<"Enter the key:";
     cin>>key;
+    //Complexity of Linear Search; O(n)
     cout<<linearSearch(array,s,key)<<endl;
     return 0;  
 } 
