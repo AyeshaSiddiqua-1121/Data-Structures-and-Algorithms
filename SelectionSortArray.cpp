@@ -11,17 +11,18 @@ int main() {
     for (int i=0;i<size;i++){
         cin>>array[i];
     }
-    for (int i=0; i<size-1;i++){
-        for (int j=i+1; j<size;j++){
-            // Compare the elements of two arrays
-            if (array[j]<array[i]){
-                //Swapping the element of array j with i
-                int temp=array[j];
-                array[j]=array[i];
-                array[i]=temp;   
+    // BUbble Sorting; Time Complexity is O(n^2)
+    int count=1;
+    while (count<size){
+        for (int i=0;i<size-count;i++){
+            // Comparing adjacent elements of the array
+            if(array[i]>array[i+1]){ //Going from left to  right 
+                int temp=array[i];
+                array[i]=array[i+1];
+                array[i+1]=temp;
             }
-            
         }
+        count++;
     }
     cout<<"Sorted Array is:";
     for (int i=0; i<size;i++){
