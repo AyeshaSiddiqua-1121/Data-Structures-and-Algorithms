@@ -3,7 +3,7 @@
 #include<climits>
 using namespace std;
 
-// Binary Search Function, Time Complexity is log2(n)
+// Binary Search Function, Time Complexity is O(log2(n))
 int binarySearch(int arr[],int s,int k){
     int start=0;
     int end=s;//Last element of array
