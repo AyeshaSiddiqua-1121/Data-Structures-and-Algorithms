@@ -3,7 +3,6 @@
 #include<climits>
 using namespace std;
 int main() {
-    //What we have to search is max till i; Till the end of array, what were the max at each posiion
     int size;
     cout<<"Enter the size of array:";
     cin>>size;
